@@ -4,6 +4,6 @@
 
 /* activate bluetooth */
 #define CONFIG_WIRELESS 1
-
+#define THUMBS LH1 LH0 RH0 RH1 // thumbs
 /* source the main keymap */
 #include "base.keymap"
