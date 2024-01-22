@@ -1,0 +1,44 @@
+// 한글 자모 유니코드 정의
+ZMK_UNICODE_PAIR(hg_giyeok,    N3, 1, 1, 3, 6, 2, 0)  // ㄱ, 유니코드 3131
+ZMK_UNICODE_PAIR(hg_nieun,     N3, 1, 1, 4, 6, 2, 1)  // ㄴ, 유니코드 3134
+ZMK_UNICODE_PAIR(hg_digeut,    N3, 1, 1, 5, 6, 2, 4)  // ㄷ, 유니코드 3137
+ZMK_UNICODE_PAIR(hg_rieul,     N3, 1, 1, 6, 6, 2, 5)  // ㄹ, 유니코드 3139
+ZMK_UNICODE_PAIR(hg_mieum,     N3, 1, 1, 7, 6, 2, 6)  // ㅁ, 유니코드 3141
+ZMK_UNICODE_PAIR(hg_bieup,     N3, 1, 1, 8, 6, 2, 7)  // ㅂ, 유니코드 3142
+ZMK_UNICODE_PAIR(hg_siot,      N3, 1, 1, 9, 6, 2, 8)  // ㅅ, 유니코드 3145
+ZMK_UNICODE_PAIR(hg_ieung,     N3, 1, 2, 0, 6, 2, 9)  // ㅇ, 유니코드 3147
+ZMK_UNICODE_PAIR(hg_jieut,     N3, 1, 2, 1, 6, 2, A)  // ㅈ, 유니코드 3148
+ZMK_UNICODE_PAIR(hg_chieut,    N3, 1, 2, 2, 6, 2, C)  // ㅊ, 유니코드 314A
+ZMK_UNICODE_PAIR(hg_kieuk,     N3, 1, 2, 3, 6, 2, D)  // ㅋ, 유니코드 314B
+ZMK_UNICODE_PAIR(hg_tieut,     N3, 1, 2, 4, 6, 2, E)  // ㅌ, 유니코드 314C
+ZMK_UNICODE_PAIR(hg_pieup,     N3, 1, 2, 5, 6, 2, F)  // ㅍ, 유니코드 314D
+ZMK_UNICODE_PAIR(hg_hieut,     N3, 1, 2, 6, 6, 3, 0)  // ㅎ, 유니코드 314E
+// 모음
+ZMK_UNICODE_PAIR(hg_a,         N3, 1, 4, 0, 6, 3, 1)  // ㅏ, 유니코드 314F
+ZMK_UNICODE_PAIR(hg_ae,        N3, 1, 4, 1, 6, 3, 2)  // ㅐ, 유니코드 3150
+ZMK_UNICODE_PAIR(hg_ya,        N3, 1, 4, 2, 6, 3, 3)  // ㅑ, 유니코드 3151
+ZMK_UNICODE_PAIR(hg_yae,       N3, 1, 4, 3, 6, 3, 4)  // ㅒ, 유니코드 3152
+ZMK_UNICODE_PAIR(hg_eo,        N3, 1, 4, 4, 6, 3, 5)  // ㅓ, 유니코드 3153
+ZMK_UNICODE_PAIR(hg_e,         N3, 1, 4, 5, 6, 3, 6)  // ㅔ, 유니코드 3154
+ZMK_UNICODE_PAIR(hg_yeo,       N3, 1, 4, 6, 6, 3, 7)  // ㅕ, 유니코드 3155
+ZMK_UNICODE_PAIR(hg_ye,        N3, 1, 4, 7, 6, 3, 8)  // ㅖ, 유니코드 3156
+ZMK_UNICODE_PAIR(hg_o,         N3, 1, 4, 8, 6, 3, 9)  // ㅗ, 유니코드 3157
+ZMK_UNICODE_PAIR(hg_wa,        N3, 1, 4, 9, 6, 3, A)  // ㅘ, 유니코드 3158
+ZMK_UNICODE_PAIR(hg_wae,       N3, 1, 5, 0, 6, 3, B)  // ㅙ, 유니코드 3159
+ZMK_UNICODE_PAIR(hg_oe,        N3, 1, 5, 1, 6, 3, C)  // ㅚ, 유니코드 315A
+ZMK_UNICODE_PAIR(hg_yo,        N3, 1, 5, 2, 6, 3, D)  // ㅛ, 유니코드 315B
+ZMK_UNICODE_PAIR(hg_u,         N3, 1, 5, 3, 6, 3, E)  // ㅜ, 유니코드 315C
+ZMK_UNICODE_PAIR(hg_weo,       N3, 1, 5, 4, 6, 3, F)  // ㅝ, 유니코드 315D
+ZMK_UNICODE_PAIR(hg_we,        N3, 1, 5, 5, 6, 4, 0)  // ㅞ, 유니코드 315E
+ZMK_UNICODE_PAIR(hg_wi,        N3, 1, 5, 6, 6, 4, 1)  // ㅟ, 유니코드 315F
+ZMK_UNICODE_PAIR(hg_yu,        N3, 1, 5, 7, 6, 4, 2)  // ㅠ, 유니코드 3160
+ZMK_UNICODE_PAIR(hg_eu,        N3, 1, 5, 8, 6, 4, 3)  // ㅡ, 유니코드 3161
+ZMK_UNICODE_PAIR(hg_yi,        N3, 1, 5, 9, 6, 4, 4)  // ㅢ, 유니코드 3162
+ZMK_UNICODE_PAIR(hg_i,         N3, 1, 6, 0, 6, 4, 5)  // ㅣ, 유니코드 3163
+
+// 나머지 한글 자음 유니코드 정의
+ZMK_UNICODE_PAIR(hg_ssang_giyeok, N3, 1, 1, 4, 6, 3, 1, 3) // ㄲ, 유니코드 3134
+ZMK_UNICODE_PAIR(hg_ssang_digeut, N3, 1, 1, 7, 6, 3, 1, 6) // ㄸ, 유니코드 3137
+ZMK_UNICODE_PAIR(hg_ssang_bieup,  N3, 1, 1, A, 6, 3, 1, 9) // ㅃ, 유니코드 3142
+ZMK_UNICODE_PAIR(hg_ssang_siot,   N3, 1, 1, C, 6, 3, 1, B) // ㅆ, 유니코드 3145
+ZMK_UNICODE_PAIR(hg_ssang_jieut,  N3, 1, 1, E, 6, 3, 1, D) // ㅉ, 유니코드 3148
