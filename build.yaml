@@ -13,8 +13,21 @@
 #
 ---
 include:
-include:
+  # cradio (nice_nano_v2 사용)
   - board: nice_nano_v2
     shield: cradio_left
   - board: nice_nano_v2
     shield: cradio_right
+  
+  # dyad (seeeduino_xiao_ble 사용)
+  - board: seeeduino_xiao_ble
+    shield: dyad_central_dongle
+    artifact-name: dyad_central_dongle
+  - board: seeeduino_xiao_ble
+    shield: dyad_peripheral_left
+    artifact-name: dyad_peripheral_left
+  - board: seeeduino_xiao_ble
+    shield: dyad_peripheral_right
+    artifact-name: dyad_peripheral_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
