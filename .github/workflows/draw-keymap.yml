@@ -33,7 +33,6 @@ jobs:
           
       - name: Install keymap-drawer
         run: |
-          pip install 'tree-sitter<0.21.0'
           pip install keymap-drawer
         
       - name: Draw keymaps
