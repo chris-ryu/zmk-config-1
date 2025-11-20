@@ -33,7 +33,7 @@ jobs:
           
       - name: Install keymap-drawer
         run: |
-          pip install keymap-drawer
+          pip install 'keymap-drawer>=0.22.0'
         
       - name: Draw keymaps
         run: |
