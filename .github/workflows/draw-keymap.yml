@@ -31,9 +31,14 @@ jobs:
         with:
           python-version: '3.12'
           
-      - name: Install keymap-drawer
+      - name: Install dependencies
         run: |
-          pip install 'keymap-drawer>=0.22.0'
+          pip install west 'keymap-drawer>=0.22.0'
+          
+      - name: Initialize ZMK modules
+        run: |
+          west init -l config
+          west update
         
       - name: Draw keymaps
         run: |
@@ -41,13 +46,20 @@ jobs:
           for keymap in config/*.keymap; do
             if [ -f "$keymap" ]; then
               base=$(basename "$keymap" .keymap)
+              
+              # base.keymap은 실제 키보드가 아닌 공유 레이아웃이므로 건너뛰기
+              if [ "$base" = "base" ]; then
+                echo "Skipping $base (shared layout, not a physical keyboard)"
+                continue
+              fi
+              
               echo "Drawing keymap for $base"
               
-              # keymap을 YAML로 파싱
-              keymap parse -z "$keymap" > "draw/${base}.yaml"
+              # keymap을 YAML로 파싱 (config 파일 사용)
+              keymap -c draw/config.yaml parse -z "$keymap" > "draw/${base}.yaml"
               
-              # SVG 이미지 생성
-              keymap draw "draw/${base}.yaml" > "draw/${base}.svg"
+              # SVG 이미지 생성 (config 파일 사용)
+              keymap -c draw/config.yaml draw "draw/${base}.yaml" > "draw/${base}.svg"
             fi
           done
           
