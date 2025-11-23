@@ -42,12 +42,12 @@ jobs:
         
       - name: Draw keymaps
         run: |
-          # config 디렉토리에서 keymap 파일 찾기
+          # Find keymap files in config directory
           for keymap in config/*.keymap; do
             if [ -f "$keymap" ]; then
               base=$(basename "$keymap" .keymap)
               
-              # base.keymap은 실제 키보드가 아닌 공유 레이아웃이므로 건너뛰기
+              # Skip base.keymap since it's a shared layout, not a physical keyboard
               if [ "$base" = "base" ]; then
                 echo "Skipping $base (shared layout, not a physical keyboard)"
                 continue
@@ -55,10 +55,10 @@ jobs:
               
               echo "Drawing keymap for $base"
               
-              # keymap을 YAML로 파싱 (config 파일 사용)
+              # Parse keymap to YAML (using config file)
               keymap -c draw/config.yaml parse -z "$keymap" > "draw/${base}.yaml"
               
-              # SVG 이미지 생성 (config 파일 사용)
+              # Generate SVG image (using config file)
               keymap -c draw/config.yaml draw "draw/${base}.yaml" > "draw/${base}.svg"
             fi
           done
